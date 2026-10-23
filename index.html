@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Erost Studio | Reclutamiento & Formación de Modelos</title>
+  <title>Erost | Studio Webcam & Formación de Modelos</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Icons -->
@@ -17,120 +17,57 @@
     .bg-gold-button {
       background: linear-gradient(135deg, #d4af37 0%, #aa771c 100%);
     }
+    .gold-border {
+      border-color: #d4af37;
+    }
   </style>
 </head>
 <body class="bg-neutral-950 text-neutral-100 font-sans antialiased">
 
   <!-- BANNER MARCA DE AGUA (PROTOTIPO) -->
-  <div style="background: #e63946; color: #ffffff; text-align: center; padding: 10px; font-weight: bold; position: sticky; top: 0; z-index: 9999; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+  <div style="background: #e63946; color: #ffffff; text-align: center; padding: 10px; font-weight: bold; position: sticky; top: 0; z-index: 9999; box-shadow: 0 2px 10px rgba(0,0,0,0.5); font-size: 13px;">
     🔒 PROTOTIPO DE DEMOSTRACIÓN EXCLUSIVO — DISEÑADO POR TATIANA MORANTE DEV
   </div>
 
-  <!-- HEADER -->
-  <header class="py-6 px-4 border-b border-neutral-800 text-center bg-neutral-900/80 backdrop-blur-md">
-    <h1 class="text-3xl font-black tracking-widest gold-gradient uppercase">EROST STUDIO</h1>
-    <p class="text-xs text-neutral-400 tracking-wider mt-1">ESTUDIO WEBCAM &amp; FORMACIÓN PROFESIONAL</p>
+  <!-- HEADER CON LOGO EROST EXACTO -->
+  <header class="py-8 px-4 border-b border-neutral-800 text-center bg-neutral-900/80 backdrop-blur-md">
+    <div class="max-w-md mx-auto flex flex-col items-center justify-center">
+      
+      <!-- ISOTIPO CORAZÓN Y PAZ EN DORADO -->
+      <div class="w-16 h-16 mb-2 rounded-full border-2 border-amber-500/80 flex items-center justify-center p-2 bg-neutral-950 shadow-lg shadow-amber-500/10">
+        <svg viewBox="0 0 100 100" class="w-full h-full text-amber-400 fill-current">
+          <!-- Corazón -->
+          <path d="M50 88 C20 65 5 45 5 28 C5 12 18 3 32 3 C41 3 47 8 50 14 C53 8 59 3 68 3 C82 3 95 12 95 28 C95 45 80 65 50 88 Z" fill="none" stroke="currentColor" stroke-width="6"/>
+          <!-- Símbolo de la paz central -->
+          <circle cx="50" cy="40" r="22" fill="none" stroke="currentColor" stroke-width="5"/>
+          <line x1="50" y1="18" x2="50" y2="62" stroke="currentColor" stroke-width="5"/>
+          <line x1="50" y1="40" x2="34" y2="56" stroke="currentColor" stroke-width="5"/>
+          <line x1="50" y1="40" x2="66" y2="56" stroke="currentColor" stroke-width="5"/>
+        </svg>
+      </div>
+
+      <!-- LOGOTIPO ER[CORAZÓN]ST -->
+      <div class="flex items-center justify-center gap-1 font-serif text-3xl sm:text-4xl font-light tracking-[0.2em] text-amber-400 uppercase">
+        <span>ER</span>
+        <svg viewBox="0 0 100 100" class="w-7 h-7 text-amber-400 fill-current inline-block mx-0.5">
+          <path d="M50 88 C20 65 5 45 5 28 C5 12 18 3 32 3 C41 3 47 8 50 14 C53 8 59 3 68 3 C82 3 95 12 95 28 C95 45 80 65 50 88 Z" fill="none" stroke="currentColor" stroke-width="8"/>
+          <circle cx="50" cy="40" r="20" fill="none" stroke="currentColor" stroke-width="6"/>
+          <line x1="50" y1="20" x2="50" y2="60" stroke="currentColor" stroke-width="6"/>
+          <line x1="50" y1="40" x2="36" y2="54" stroke="currentColor" stroke-width="6"/>
+          <line x1="50" y1="40" x2="64" y2="54" stroke="currentColor" stroke-width="6"/>
+        </svg>
+        <span>ST</span>
+      </div>
+
+      <p class="text-[10px] text-amber-500/80 tracking-[0.4em] uppercase font-light mt-1">STUDIO WEBCAM</p>
+    </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION CON CONCEPTO Y ESLOGAN -->
   <section class="max-w-4xl mx-auto px-6 py-12 text-center">
-    <span class="bg-amber-500/10 text-amber-400 border border-amber-500/30 text-xs px-3 py-1 rounded-full uppercase tracking-widest font-semibold">
+    <span class="bg-amber-500/10 text-amber-400 border border-amber-500/30 text-xs px-4 py-1.5 rounded-full uppercase tracking-widest font-medium">
       Convocatoria Abierta • No necesitas experiencia
     </span>
     
     <h2 class="text-3xl sm:text-5xl font-extrabold mt-6 leading-tight">
-      Descubre tu potencial en un espacio <span class="gold-gradient">seguro, privado y profesional</span>
-    </h2>
-    
-    <p class="mt-4 text-neutral-400 text-base sm:text-lg max-w-2xl mx-auto">
-      Te ofrecemos instalaciones de primer nivel, acompañamiento constante y capacitación desde cero para maximizar tus ingresos sin tabúes.
-    </p>
-
-    <!-- BOTÓN WHATSAPP CON NÚMERO REAL -->
-    <div class="mt-8">
-      <a href="https://wa.me/573146619634?text=Hola,%20vi%20su%20p%C3%A1gina%20web%20y%20estoy%20interesada%20en%20postularme%20como%20modelo%20en%20Erost%20Studio" 
-         target="_blank" 
-         class="inline-flex items-center justify-center gap-3 bg-gold-button hover:opacity-90 text-neutral-950 font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-amber-500/20 transition-all transform hover:-translate-y-1">
-        <i class="fa-brands fa-whatsapp text-2xl"></i>
-        WhatsApp: 314 661 9634
-      </a>
-      <p class="text-xs text-neutral-500 mt-2">Respuesta inmediata y 100% confidencial</p>
-    </div>
-  </section>
-
-  <!-- BENEFICIOS -->
-  <section class="max-w-5xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div class="bg-neutral-900/50 border border-neutral-800 p-6 rounded-2xl text-center">
-      <div class="w-12 h-12 mx-auto bg-amber-500/10 text-amber-400 rounded-full flex items-center justify-center text-xl mb-4">
-        <i class="fa-solid fa-lock"></i>
-      </div>
-      <h3 class="font-bold text-lg text-white">Privacidad Garantizada</h3>
-      <p class="text-sm text-neutral-400 mt-2">Bloqueo de países e instalaciones discretas diseñadas para tu total tranquilidad.</p>
-    </div>
-
-    <div class="bg-neutral-900/50 border border-neutral-800 p-6 rounded-2xl text-center">
-      <div class="w-12 h-12 mx-auto bg-amber-500/10 text-amber-400 rounded-full flex items-center justify-center text-xl mb-4">
-        <i class="fa-solid fa-chart-line"></i>
-      </div>
-      <h3 class="font-bold text-lg text-white">Capacitación Continua</h3>
-      <p class="text-sm text-neutral-400 mt-2">Monitores capacitados que te guiarán paso a paso para alcanzar metas altas desde tu primer mes.</p>
-    </div>
-
-    <div class="bg-neutral-900/50 border border-neutral-800 p-6 rounded-2xl text-center">
-      <div class="w-12 h-12 mx-auto bg-amber-500/10 text-amber-400 rounded-full flex items-center justify-center text-xl mb-4">
-        <i class="fa-solid fa-sack-dollar"></i>
-      </div>
-      <h3 class="font-bold text-lg text-white">Pagos Puntuales</h3>
-      <p class="text-sm text-neutral-400 mt-2">Sistema de pagos quincenales, transparencia en tus ingresos y bonos por desempeño.</p>
-    </div>
-  </section>
-
-  <!-- GALERÍA DE INSTALACIONES -->
-  <section class="max-w-5xl mx-auto px-6 py-12">
-    <h3 class="text-2xl font-bold text-center mb-2">Instalaciones &amp; Ambientes</h3>
-    <p class="text-neutral-400 text-center text-sm mb-8">Espacios temáticos totalmente equipados con tecnología HD y transmisión de alta velocidad.</p>
-
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-      <div class="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-800 aspect-video flex items-center justify-center text-neutral-500">
-        <div class="text-center p-4">
-          <i class="fa-solid fa-camera text-3xl mb-2 text-amber-500/50"></i>
-          <p class="text-xs">Habitación Temática Premium</p>
-        </div>
-      </div>
-      <div class="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-800 aspect-video flex items-center justify-center text-neutral-500">
-        <div class="text-center p-4">
-          <i class="fa-solid fa-lightbulb text-3xl mb-2 text-amber-500/50"></i>
-          <p class="text-xs">Iluminación Profesional &amp; 4K</p>
-        </div>
-      </div>
-      <div class="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-800 aspect-video flex items-center justify-center text-neutral-500">
-        <div class="text-center p-4">
-          <i class="fa-solid fa-couch text-3xl mb-2 text-amber-500/50"></i>
-          <p class="text-xs">Zonas de Descanso Privadas</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FORMULARIO / CONTACTO DIRECTO -->
-  <section class="max-w-2xl mx-auto px-6 py-12 text-center">
-    <div class="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl shadow-xl">
-      <h3 class="text-2xl font-bold gold-gradient">¿Lista para comenzar?</h3>
-      <p class="text-sm text-neutral-400 mt-2 mb-6">Escríbenos directamente a nuestro WhatsApp oficial para agendar tu entrevista o resolver cualquier duda.</p>
-
-      <a href="https://wa.me/573146619634?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20para%20trabajar%20en%20Erost%20Studio" 
-         target="_blank"
-         class="inline-block w-full bg-gold-button text-neutral-950 font-bold py-4 rounded-xl text-base hover:opacity-90 transition-all">
-        💬 Hablar directamente al 314 661 9634
-      </a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="py-8 text-center text-xs text-neutral-500 border-t border-neutral-900">
-    <p>© Erost Studio — Todos los derechos reservados.</p>
-    <p class="mt-1 text-neutral-600">Página Web de Demostración desarrollada por <span class="text-amber-500">Tatiana Morante Dev</span></p>
-  </footer>
-
-</body>
-</html>
+      Descubre tu sensualidad desde una perspectiva sensorial, <span class="gold-gradient">dejando a un lado el tabú.</span>
